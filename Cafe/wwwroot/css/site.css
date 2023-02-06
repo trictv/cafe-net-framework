@@ -1,0 +1,46 @@
+﻿#head {
+    background-color: #99A3A4;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#rodape {
+    background-color: #99A3A4;
+    padding: 5px;
+    margin: 0px;
+}
+
+#produtos {
+    background-color: #EAEDED;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+#estrutura {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+.produto {
+    margin-top: 20px;
+}
+
+.produto h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.produto .produto_descricao {
+    font-size: 16px;
+}
+
+.formulario_campo, .formulario_botao {
+    margin-top: 10px;
+}
+
+.formulario_botao {
+    margin-bottom: 10px;
+}

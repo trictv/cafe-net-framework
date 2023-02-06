@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Novidades - Café";
+    Layout = "~/Views/Shared/_LayoutFront.cshtml";
+}
+
+@model Cafe.Models.Contato
+
+<div id="novidades" class="row formulario">
+    <div class="col-12 col-md-6">
+        <form asp-controller="Novidades" asp-action="Create">
+            <div class="formulario_campo col-12">
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu Nome" asp-for="Nome" id="nome" class="form-control" class="form-control">
+
+            </div>
+            <div class="formulario_campo col-12">
+                <label>E-mail</label>
+
+                <input type="text" placeholder="Digite seu EMAIL" asp-for="Email" id="email" class="form-control">
+            </div>
+            <div class="formulario_campo col-12">
+                <label>Celular</label>
+                <input type="text" placeholder="Digite seu CELULAR" asp-for="Celular" id="celular" class="form-control">
+
+            </div>
+            <script>
+                function confirmacao() {
+                    alert("salvo com sucesso!!!");
+                }
+            </script>
+            <div class="formulario_botao">
+                <input type="reset" value="Cancelar" class="btn btn-danger" />
+                <button type="submit" onclick="confirmacao()" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+        @Html.DisplayNameFor(model => model.Nome)
+        @Html.DisplayFor(modelItem => modelItem.Nome)
+    </div>
+</div>
